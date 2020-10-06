@@ -1,0 +1,59 @@
+/* Définition des Polices*/
+
+@font-face {
+    font-family: 'raleway';
+    src: url('font/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    
+/*@font-face {
+    font-family: 'ralewayblack';
+    src: url('font/raleway-variablefont_wght-webfont.eot');
+    src: url('font/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('font/raleway-variablefont_wght-webfont.ttf') format('truetype'),
+         url('font/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;*/
+
+}
+
+body { font-family: 'raleway', arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width:95%;  margin:auto;
+}
+
+h1 { font-size: 1.5em;
+    font-weight: 700; }
+h2 {font-weight: 700;
+    font-size: 1em}
+
+h3 {font-weight: 700;
+    font-size: 0.8em;}
+p, a {font-size: 1.1em;}
+h3~p {}
+header  { 
+    display: flex;
+    flex-direction: row; 
+justify-content: space-between;
+align-items:flex-start;} 
+header ul { 
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top:0px;
+
+}
+#menu a{text-decoration: none; 
+    color:black; font-weight:300;}
+#menu li{margin:0px; padding:30px 15px 0px 15px}
+#menu li:hover {border-top:solid; border-color:#0065FC;} 
+#menu a:hover {color:#0065FC;} 
+/*#menu #inscription a {
+    font-weight:700;
+color: #0065FC;}*/
+
+
+#filtre li { text-decoration:none; 
+    color:red; font-weight:500;}
