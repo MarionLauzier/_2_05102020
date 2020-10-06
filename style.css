@@ -38,22 +38,19 @@ header  {
     flex-direction: row; 
 justify-content: space-between;
 align-items:flex-start;} 
-header ul { 
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin-top:0px;
+header nav a { 
+    display: inline-block;
+    margin:0;
+    padding: 30px 15px 0px 15px;
 
-}
-#menu a{text-decoration: none; 
+} 
+header nav a{text-decoration: none; 
     color:black; font-weight:300;}
-#menu li{margin:0px; padding:30px 15px 0px 15px}
-#menu li:hover {border-top:solid; border-color:#0065FC;} 
-#menu a:hover {color:#0065FC;} 
-/*#menu #inscription a {
-    font-weight:700;
-color: #0065FC;}*/
+    header nav a:last-child{
+        color:#0065FC; font-weight:700;}
+        header nav a:last-child:hover{
+            border:none}
 
+header nav a:hover {border-top:solid; border-color:#0065FC;
+    color:#0065FC;} 
 
-#filtre li { text-decoration:none; 
-    color:red; font-weight:500;}
