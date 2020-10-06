@@ -1,11 +1,11 @@
 /* Définition des Polices*/
 
 @font-face {
-    font-family: 'raleway';
-    src: url('font/Raleway-VariableFont_wght.ttf') format('truetype');
-    font-style: normal;
-    
-/*@font-face {
+	font-family: "raleway";
+	src: url("font/Raleway-VariableFont_wght.ttf") format("truetype");
+	font-style: normal;
+
+	/*@font-face {
     font-family: 'ralewayblack';
     src: url('font/raleway-variablefont_wght-webfont.eot');
     src: url('font/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
@@ -15,42 +15,114 @@
          url('font/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
     font-weight: normal;
     font-style: normal;*/
-
 }
 
-body { font-family: 'raleway', arial, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    width:95%;  margin:auto;
+body {
+	font-family: "raleway", arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	width: 95%;
+	margin: auto;
 }
 
-h1 { font-size: 1.5em;
-    font-weight: 700; }
-h2 {font-weight: 700;
-    font-size: 1em}
+h1 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+h2 {
+	font-weight: 700;
+	font-size: 1em;
+}
 
-h3 {font-weight: 700;
-    font-size: 0.8em;}
-p, a {font-size: 1.1em;}
-h3~p {}
-header  { 
-    display: flex;
-    flex-direction: row; 
-justify-content: space-between;
-align-items:flex-start;} 
-header nav a { 
-    display: inline-block;
-    margin:0;
-    padding: 30px 15px 0px 15px;
+h3 {
+	font-weight: 700;
+	font-size: 0.8em;
+}
+p,
+a {
+	font-size: 1.1em;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+h3 ~ p {
+}
 
-} 
-header nav a{text-decoration: none; 
-    color:black; font-weight:300;}
-    header nav a:last-child{
-        color:#0065FC; font-weight:700;}
-        header nav a:last-child:hover{
-            border:none}
+/* Mise en forme header*/
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+header nav a {
+	display: inline-block;
+	margin: 0;
+	padding: 30px 15px 0px 15px;
+}
+header nav a {
+	font-weight: 300;
+}
+header nav a:last-child {
+	color: #0065fc;
+	font-weight: 700;
+}
+header nav a:last-child:hover {
+	border: none;
+}
 
-header nav a:hover {border-top:solid; border-color:#0065FC;
-    color:#0065FC;} 
-
+header nav a:hover {
+	border-top: solid;
+	border-color: #0065fc;
+	color: #0065fc;
+}
+/* Mise en forme section recherche*/
+#recherche h1 {
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+#recherche p {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+section form {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+label {
+	background-color: #f2f2f2;
+	padding: 15px;
+	margin: 0px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border: 2px solid #f2f2f2;
+	text-align: center;
+}
+label i {
+	font-size: 1.1em;
+}
+section input {
+	font-family: "raleway", arial, sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+}
+input[type="button"] {
+	padding: 15px;
+	margin: 0px;
+	border: 2px solid #0065fc;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: white;
+	background-color: #0065fc;
+}
+input[type="search"] {
+	padding: 15px;
+	margin: -5px;
+	border: 2px solid #f2f2f2;
+	color: black;
+}
+input[type="search"]::placeholder {
+	opacity: 1;
+}
