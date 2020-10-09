@@ -188,6 +188,7 @@ aside {
 article {
 	box-sizing: border-box;
 	width: 65%;
+	min-width:335px;
 	padding: 0px 40px;
 	margin: 0;
 }
@@ -251,11 +252,14 @@ figcaption {margin-top:00px; padding: 0; }*/
 
 /*accomodation aside formatting */
 
-h1 i {float: right;}
+h1 i {
+	float: right;
+}
 
 aside {
 	box-sizing: border-box;
 	width: 31%;
+	min-width:320px;
 	padding: 0px 35px;
 	margin: 0;
 }
@@ -263,35 +267,49 @@ aside {
 aside ul {
 	margin: 0;
 	padding: 0;
-	display: flex; flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
 
-aside li a{
-	box-sizing: border-box;
-	background-color: white;
-	width: 100%;
-	min-width: 346px;
-	height: 150px;
-	border: solid white 5px;
-	border-radius: 20px;
-	margin: 15px 0px 15px 0px;
-	padding: 0;
-	display: flex; flex-direction:row; flex-wrap: nowrap;
+aside li {
+	list-style-type: none;
 }
 
-aside li{list-style-type: none;}
+aside figure {
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 250px;
+	/* min-width: 346px; */
+	height: 150px;
+	margin: 15px 0;
+	padding: 0;
+	background-color: white;
+	border: solid white 5px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+}
 
 aside img {
-		height: 100%;
+	height: 100%;
+	min-width: 127px;
 	width: 127px;
 	object-fit: cover;
 	border-top-left-radius: 18px;
 	border-bottom-left-radius: 18px;
 }
 
+aside figcaption {
+	margin: 15px 5px 8px 15px;
+	position: relative;
+}
+
+.etoile {
+	position: absolute;
+	bottom: 0;
+}
+
 /* aside li a{ height: 150px;
 	display: flex; flex-direction:row; flex-wrap: nowrap;} */
-
-
