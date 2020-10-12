@@ -164,6 +164,10 @@ nav a {
 	white-space: nowrap;
 }
 
+nav li:hover{background-color:#0065fc; 
+transform:scale(1.2);}
+nav li:hover a{color:white;}
+
 #recherche p:last-of-type i {
 	color: #0065fc;
 	font-size: 0.6em;
@@ -194,51 +198,62 @@ article {
 }
 
 article ul {
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	column-gap: 10px;
 }
 
 article li {
-	box-sizing: border-box;
 	list-style-type: none;
-	background-color: white;
 	width: 30%;
 	min-width: 255px;
 	height: 204px;
+	margin: 15px 0px 15px 0px;
+}
+article figure {
+	box-sizing: border-box;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+
 	border: solid white 5px;
 	border-radius: 20px;
-	margin: 15px 0px 15px 0px;
+	box-shadow: 0px 0px 5px grey;
+	margin: 0;
 	padding: 0;
-	/* display: flex; flex-direction: column; 
-justify-content: flex-end; */
 }
 
+figure:hover {transform: scale(1.05);}
+
 article li img {
-	/* display:block; */
 	width: 100%;
 	height: 114px;
 	object-fit: cover;
 	border-top-left-radius: 18px;
 	border-top-right-radius: 18px;
 }
+
+article figcaption {
+	height: calc(100% - 114px);
+	margin-left: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+article figcaption p:last-child {
+	padding-left: 3px;
+}
+
 li h3,
 li p {
 	margin: 0px;
 	padding: 0;
 }
-
-/*#essai { height: 200px; display: flex; flex-direction: column; 
-justify-content: flex-start;}
-
-figure {margin: 0; padding: 0; height:200px;
-	/*display: flex; flex-direction: column; 
-	justify-content: flex-end;}
-figcaption {margin-top:00px; padding: 0; }*/
-
-/*article i {margin:0; padding:0; color:#0065fc; font-size:0.7em}*/
 
 .fa-star {
 	margin-left: -3px;
@@ -312,6 +327,10 @@ aside figcaption {
 	left: 3px;
 }
 
+aside figcaption p:first-of-type {
+	padding: 10px 0px;
+}
+
 /* Activity section formatting */
 #activite {
 	width: 100%;
@@ -355,7 +374,6 @@ aside figcaption {
 }
 
 #activite li {
-	width: 100%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -403,6 +421,6 @@ footer ul {
 }
 footer li {
 	list-style-type: none;
-	margin: 0;
+	margin: 0 0 10px 0;
 	padding: 0;
 }
