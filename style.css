@@ -29,8 +29,8 @@ h1,
 h2 {
 	font-size: 22px;
 	font-weight: 700;
-	margin:0; 
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 h3 {
 	font-weight: 700;
@@ -149,7 +149,7 @@ section nav {
 section nav ul {
 	display: flex;
 	align-items: center;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 }
 
 section nav li {
@@ -213,7 +213,8 @@ figure:hover {
 	transform: scale(1.05);
 }
 
-figcaption h4, figcaption p {
+figcaption h4,
+figcaption p {
 	margin: 0px;
 	padding: 0;
 }
@@ -241,8 +242,9 @@ article {
 }
 
 article h3 {
-	padding:0; 
-	margin:0;}
+	padding: 0;
+	margin: 0;
+}
 
 #carteheb1 {
 	width: 100%;
@@ -252,7 +254,7 @@ article h3 {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	column-gap: 10px;
-	row-gap:30px;
+	row-gap: 30px;
 }
 
 article a {
@@ -264,11 +266,11 @@ article figure {
 	box-sizing: border-box;
 	background-color: white;
 	width: 100%;
-	height:100%;
+	height: 100%;
 	box-shadow: 0px 2px 10px #c4c4c4;
 	border: solid white 5px;
 	border-radius: 20px;
-	margin:0;
+	margin: 0;
 	padding: 0;
 }
 
@@ -278,14 +280,15 @@ article img {
 	object-fit: cover;
 	border-top-left-radius: 18px;
 	border-top-right-radius: 18px;
-}  
+}
 
 article figcaption {
 	height: 76px;
 	margin-left: 12px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;}
+	justify-content: space-evenly;
+}
 
 article figcaption p:last-child {
 	padding-left: 3px;
@@ -314,9 +317,8 @@ aside {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	row-gap:30px;
+	row-gap: 30px;
 }
-
 
 aside figure {
 	box-sizing: border-box;
@@ -365,48 +367,41 @@ aside figcaption p:first-of-type {
 #activite {
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 50px 0 0 0;
 }
-#activite ul {
+#carteact {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, minmax(306px, 1fr));
 	grid-template-rows: 200px 40px 40px 170px;
-
 	column-gap: 40px;
 	row-gap: 0px;
 	margin: 0;
-	padding: 0;
+	padding: 25px 0 0 0;
 }
-#activite ul li:nth-child(1) {
+#carteact a:nth-child(1) {
 	grid-column: 1/2;
 	grid-row: 1/5;
 }
-#activite ul li:nth-child(2) {
+#carteact a:nth-child(2) {
 	grid-column: 2/3;
 	grid-row: 1/3;
 }
-#activite ul li:nth-child(3) {
+#carteact a:nth-child(3) {
 	grid-column: 2/3;
 	grid-row: 4/5;
 }
-#activite ul li:nth-child(4) {
+#carteact a:nth-child(4) {
 	grid-column: 3/4;
 	grid-row: 1/5;
 }
-#activite ul li:nth-child(5) {
+#carteact a:nth-child(5) {
 	grid-column: 4/5;
 	grid-row: 1/2;
 }
-#activite ul li:nth-child(6) {
+#carteact a:nth-child(6) {
 	grid-column: 4/5;
 	grid-row: 3/5;
-}
-
-#activite li {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
 }
 
 #activite figure {
@@ -443,6 +438,7 @@ aside figcaption p:first-of-type {
 
 /* #region  Footer */
 footer {
+	box-sizing: border-box;
 	width: 100%;
 	background-color: #f2f2f2;
 	display: grid;
