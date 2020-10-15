@@ -113,7 +113,7 @@ header nav p:hover a {
 	margin-top: 0px;
 	padding-top: 0px;
 }
-section form {
+section form p {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -130,12 +130,13 @@ label {
 label i {
 	font-size: 18px;
 }
-section input {
+input,
+button {
 	font-family: "raleway", arial, sans-serif;
 	font-weight: 700;
 	font-size: 17px;
 }
-input[type="button"] {
+button {
 	padding: 15px;
 	margin: 0px;
 	border: 2px solid #0065fc;
@@ -143,6 +144,10 @@ input[type="button"] {
 	border-bottom-right-radius: 15px;
 	color: white;
 	background-color: #0065fc;
+}
+
+button span:first-of-type {
+	display: none;
 }
 
 input[type="search"] {
@@ -557,7 +562,6 @@ footer li {
 		grid-template-columns: repeat(3, auto);
 		column-gap: 20px;
 	}
-	
 }
 
 @media all and (max-width: 599px) {
@@ -574,7 +578,7 @@ footer li {
 	header p:first-of-type {
 		grid-column: 1/2;
 		grid-row: 1/2;
-		padding-left:15px;
+		padding-left: 15px;
 	}
 
 	header nav {
@@ -602,6 +606,17 @@ footer li {
 		padding-left: 20px;
 		padding-right: 20px;
 		margin-top: 30px;
+	}
+
+	button span:first-of-type {
+		display: block;
+	}
+	button span:last-of-type {
+		display: none;
+	}
+	button {
+		border-radius: 15px;
+		margin-left: -10px;
 	}
 	section nav {
 		flex-direction: column;
