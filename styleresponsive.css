@@ -42,14 +42,16 @@
 
 	#carteheb2 {
 		flex-direction: column;
+		align-items: center;
 		row-gap: 30px;
 	}
 
 	aside a {
 		width: 100%;
+		max-width: 650px;
 	}
 	aside img {
-		width: 30%;
+		width: 40%;
 	}
 	#carteheb1 a {
 		width: 48%;
@@ -145,6 +147,10 @@
 	section nav ul {
 		margin: 10px -20px 0 0;
 		column-gap: 10px;
+	}
+
+	.fa-ul a {
+		font-size: 15px;
 	}
 
 	section nav i {

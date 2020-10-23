@@ -124,7 +124,6 @@ label {
 	margin: 0px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
-	/* border: 2px solid #f2f2f2; */
 	text-align: center;
 }
 label i {
@@ -140,7 +139,6 @@ button {
 	padding: 15px;
 	margin: 0px;
 	border: none;
-	/* border: 2px solid #0065fc; */
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	color: white;
@@ -223,6 +221,9 @@ nav li:hover a {
 /* Accomodation section formatting*/
 
 /* #region  Accomodation section */
+#hebergement > h2 {
+	display: none;
+}
 #hebergement {
 	display: flex;
 	justify-content: space-between;
@@ -495,4 +496,3 @@ footer li {
 	padding: 0;
 }
 /* #endregion */
-
