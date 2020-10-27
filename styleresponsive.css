@@ -185,8 +185,12 @@
 	aside a {
 		width: 100%;
 	}
+	aside figure {
+		background-color: white;
+	}
 	aside img {
 		min-width: 127px;
+		width: 30%;
 	}
 
 	#activite {
@@ -241,5 +245,13 @@
 		grid-template-rows: auto;
 		row-gap: 30px;
 		padding-left: 20px;
+	}
+}
+@media all and (max-width: 360px) {
+	aside figcaption {
+		margin-left: 10px;
+	}
+	input[type="search"] {
+		width: 75%;
 	}
 }
